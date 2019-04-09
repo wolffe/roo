@@ -52,8 +52,8 @@ if(isset($_POST['submit_update'])) {
     $uploaded_files = array();
     $upload_directory = dirname(__file__) . '/temporary/full/'; //set upload directory
     /**
-     * we get a $_FILES['images'] array, we process this array while iterating with simple for loop 
-     * you can check this array by print_r($_FILES['images']); 
+     * we get a $_FILES['images'] array, we process this array while iterating with simple for loop
+     * you can check this array by print_r($_FILES['images']);
      */
 
     for($i = 0; $i < count($_FILES['file']['name']); $i++) {
@@ -144,7 +144,7 @@ echo '<h2 style="padding-bottom: 0; margin-bottom: 16px; font-size: 20pt; line-h
 <div class="update">
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>?id=<?php echo $id; ?>" class="pure-form" enctype="multipart/form-data">
         <p><i class="fa fa-file-o"></i> Add New Task/Update</p>
-		<input type="hidden" name="projectid" value="<?php echo $id; ?>">	
+		<input type="hidden" name="projectid" value="<?php echo $id; ?>">
 
         <div class="update-align-left">
             <p><input type="text" name="usubject" id="usubject" class="pure-input-1" placeholder="Subject/Title"></p>
@@ -341,4 +341,4 @@ echo '<h2 style="padding-bottom: 0; margin-bottom: 16px; font-size: 20pt; line-h
 </div>
 <!-- END MEDIA LIBRARY -->
 
-<?php include('includes/bottom.php');?>
+<?php include('includes/bottom.php'); ?>
